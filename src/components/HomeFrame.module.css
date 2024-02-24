@@ -1,0 +1,167 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.groupIcon {
+  height: 51px;
+  width: 55px;
+  position: relative;
+  object-fit: cover;
+}
+.electrick {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  white-space: nowrap;
+}
+.componentF {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-10xs);
+}
+.componentF,
+.frameC,
+.logoTitre {
+  display: flex;
+  justify-content: flex-start;
+}
+.logoTitre {
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--padding-5xl) 0 0;
+  gap: 0 11px;
+}
+.frameC {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 var(--padding-13xl) 0 0;
+}
+.aPropos,
+.nou {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.aPropos {
+  white-space: nowrap;
+  cursor: pointer;
+}
+.menuBar {
+  width: 193px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0 50px;
+  font-size: var(--font-size-lg);
+}
+.reactJSText,
+.reactJSText1,
+.reactJSText2 {
+  width: 40px;
+  height: 2px;
+  position: relative;
+  background-color: var(--white);
+}
+.menuToggle {
+  height: 40px;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-gray-600);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 0;
+  cursor: pointer;
+}
+.contactFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-11xs);
+}
+.nousContacter {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  font-family: var(--font-quicksand);
+  color: var(--color-gainsboro);
+  text-align: left;
+}
+.bouttonNousContacter,
+.frameK {
+  display: flex;
+  flex-direction: row;
+}
+.bouttonNousContacter {
+  cursor: pointer;
+  border: 1px solid var(--color-gainsboro);
+  padding: var(--padding-xs);
+  background-color: transparent;
+  flex: 1;
+  border-radius: var(--br-5xl);
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.bouttonNousContacter:hover {
+  background-color: var(--color-silver-300);
+  border: 1px solid var(--color-silver-100);
+  box-sizing: border-box;
+}
+.frameK {
+  width: 254px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 0 12px;
+}
+.frameCParent,
+.homeFrame {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frameCParent {
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-xl) 0 0;
+  opacity: 0;
+  gap: var(--gap-xl);
+  z-index: 100;
+  text-align: left;
+  font-size: var(--headers-h6-size);
+  color: var(--color-gainsboro);
+  font-family: var(--font-quicksand);
+}
+.frameCParent.animate {
+  animation: 2s ease 1s 1 normal forwards fade-in;
+}
+.homeFrame {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-11xs) var(--padding-24xl);
+}
+@media screen and (max-width: 750px) {
+  .menuBar {
+    display: none;
+  }
+  .menuToggle {
+    display: flex;
+  }
+  .bouttonNousContacter {
+    display: none;
+  }
+  .frameCParent {
+    width: 1111px;
+  }
+}

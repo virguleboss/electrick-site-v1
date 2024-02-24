@@ -1,0 +1,129 @@
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+.description,
+.heading {
+  align-self: stretch;
+  position: relative;
+}
+.heading {
+  margin: 0;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: inherit;
+}
+.description {
+  font-size: var(--font-size-3xl);
+  line-height: 130%;
+}
+.copy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 0;
+  max-width: 800px;
+}
+.cta {
+  position: relative;
+  font-size: var(--font-size-9xl);
+  line-height: 150%;
+  font-family: var(--font-dm-sans);
+  color: var(--color-gray-100);
+  text-align: center;
+}
+.button,
+.container,
+.textContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textContainer {
+  flex-direction: row;
+  padding: 0 var(--padding-5xs);
+}
+.button,
+.container {
+  box-sizing: border-box;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-21xl);
+  background-color: var(--white);
+  height: 97px;
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+}
+.container {
+  width: 100%;
+  border-radius: var(--br-29xl);
+  background-color: var(--color-gold-100);
+  flex-direction: column;
+  padding: var(--padding-45xl) var(--padding-13xl);
+  gap: 40px 0;
+  opacity: 1;
+  max-width: 1024px;
+  min-height: 601px;
+  text-align: center;
+  font-size: var(--font-size-32xl);
+  color: var(--color-gray-400);
+  font-family: var(--font-dm-sans);
+}
+.container.animate {
+  animation: 12s ease 0s infinite normal forwards pulsate;
+}
+@media screen and (max-width: 1050px) {
+  .heading {
+    font-size: var(--font-size-22xl);
+    line-height: 49px;
+  }
+  .container,
+  .copy {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: var(--font-size-12xl);
+    line-height: 37px;
+  }
+  .description {
+    font-size: var(--font-size-lg);
+    line-height: 23px;
+  }
+  .cta {
+    font-size: var(--font-size-3xl);
+    line-height: 34px;
+  }
+  .container {
+    gap: 40px 0;
+    padding-top: var(--padding-23xl);
+    padding-bottom: var(--padding-23xl);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-quicksand: Quicksand;
+  --font-dm-sans: "DM Sans";
+  --font-nunito: Nunito;
+  --heading-headline-1: Inter;
+  --font-montserrat: Montserrat;
+  --subtitles-subtitle-2: Roboto;
+  --font-lato: Lato;
+  --font-source-serif-pro: "Source Serif Pro";
+
+  /* font sizes */
+  --font-size-lg: 18px;
+  --font-size-3xl: 22px;
+  --font-size-9xl: 28px;
+  --font-size-32xl: 51px;
+  --font-size-12xl: 31px;
+  --font-size-22xl: 41px;
+  --font-size-23xl: 42px;
+  --font-size-6xl: 25px;
+  --font-size-15xl: 34px;
+  --heading-headline-1-size: 64px;
+  --font-size-19xl: 38px;
+  --font-size-29xl: 48px;
+  --font-size-10xl: 29px;
+  --font-size-5xl: 24px;
+  --font-size-lgi: 19px;
+  --font-size-base: 16px;
+  --headers-h6-size: 20px;
+  --font-size-smi: 13px;
+  --subtitles-subtitle-2-size: 14px;
+  --font-size-35xl: 54px;
+  --font-size-13xl: 32px;
+  --font-size-24xl: 43px;
+  --font-size-lg-7: 18.7px;
+  --font-size-17xl: 36px;
+  --font-size-21xl: 40px;
+  --font-size-77xl: 96px;
+  --font-size-26xl: 45px;
+  --font-size-8xl: 27px;
+  --font-size-mid: 17px;
+
+  /* Colors */
+  --color-gray-300: #1e1e1e;
+  --color-gray-400: #18181b;
+  --color-gray-500: #0e0e0e;
+  --color-gray-100: #0d0d0d;
+  --color-gray-200: rgba(255, 255, 255, 0.1);
+  --color-gray-600: rgba(0, 0, 0, 0.2);
+  --color-gold-200: #f3f25b;
+  --color-gold-100: #e3d128;
+  --color-gainsboro: #e2e2e2;
+  --color-gainsboro-100: #d9d9d9;
+  --white: #fff;
+  --color-royalblue: rgba(55, 125, 255, 0.5);
+  --color-dimgray: #4d4d4d;
+  --color-silver-100: #c9c9c9;
+  --color-silver-200: #b9b9b9;
+  --color-silver-300: rgba(201, 201, 201, 0.09);
+  --color-black: #000;
+  --color-goldenrod: #b09e00;
+
+  /* Gaps */
+  --gap-82xl: 101px;
+  --gap-3xs: 10px;
+  --gap-13xl: 32px;
+  --gap-9xl: 28px;
+  --gap-0: 0px;
+  --gap-21xl: 40px;
+  --gap-xs: 12px;
+  --gap-16xl: 35px;
+  --gap-81xl: 100px;
+  --gap-23xl: 42px;
+  --gap-xl: 20px;
+  --gap-5xs: 8px;
+  --gap-41xl: 60px;
+  --gap-31xl: 50px;
+  --gap-61xl: 80px;
+  --gap-26xl: 45px;
+  --gap-56xl: 75px;
+  --gap-12xl: 31px;
+  --gap-5xl: 24px;
+  --gap-mini: 15px;
+  --gap-125xl: 144px;
+  --gap-lg: 18px;
+  --gap-193xl: 212px;
+  --gap-111xl: 130px;
+  --gap-98xl: 117px;
+
+  /* Paddings */
+  --padding-15xl: 34px;
+  --padding-46xl: 65px;
+  --padding-11xs: 2px;
+  --padding-smi: 13px;
+  --padding-xl: 20px;
+  --padding-27xl: 46px;
+  --padding-11xl: 30px;
+  --padding-45xl: 64px;
+  --padding-13xl: 32px;
+  --padding-23xl: 42px;
+  --padding-base: 16px;
+  --padding-21xl: 40px;
+  --padding-5xs: 8px;
+  --padding-10xs: 3px;
+  --padding-24xl: 43px;
+  --padding-xs: 12px;
+  --padding-5xl: 24px;
+  --padding-19xl: 38px;
+  --padding-6xs: 7px;
+  --padding-2xl: 21px;
+  --padding-lgi: 19px;
+  --padding-36xl: 55px;
+  --padding-12xs: 1px;
+  --padding-16xl: 35px;
+  --padding-37xl: 56px;
+  --padding-mini: 15px;
+  --padding-8xs: 5px;
+  --padding-12xl: 31px;
+  --padding-sm: 14px;
+  --padding-275xl: 294px;
+  --padding-172xl: 191px;
+  --padding-105xl: 124px;
+
+  /* Border radiuses */
+  --br-xl: 20px;
+  --br-29xl: 48px;
+  --br-5xs: 8px;
+  --br-5xl: 24px;
+  --br-9xs: 4px;
+  --br-11xl: 30px;
+  --br-60xl: 79px;
+
+  /* Effects */
+  --dp: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12),
+    0px 5px 5px rgba(0, 0, 0, 0.2);
+}

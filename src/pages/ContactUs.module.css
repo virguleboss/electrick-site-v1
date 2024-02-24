@@ -1,0 +1,350 @@
+.vousDsirezNous {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  color:black;
+  font-weight: 700;
+  font-family: inherit;
+  z-index: unset;
+}
+.remplissezCeFormulaire {
+  width: 545px;
+  position: relative;
+  font-size: var(--subtitles-subtitle-2-size);
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  font-weight: 600;
+  display: inline-block;
+}
+.contactInfo,
+.remplissezCeFormulaire,
+.votreNom {
+  max-width: 100%;
+  z-index: unset;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px 0;
+}
+.votreNom {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-montserrat);
+  font-size: var(--subtitles-subtitle-2-size);
+  background-color: transparent;
+  height: 24px;
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  color: transparent;
+  text-align: left;
+  display: inline-block;
+  min-width: 250px;
+}
+.textFieldChild {
+  height: 6px;
+  width: 12px;
+  position: relative;
+  object-fit: contain;
+  display: none;
+}
+.textField {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-2xl) var(--padding-xs)
+    var(--padding-lgi);
+  box-sizing: border-box;
+  gap: 0 10px;
+  max-width: 100%;
+  z-index: unset;
+}
+.votreEMail {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-montserrat);
+  font-size: var(--subtitles-subtitle-2-size);
+  background-color: transparent;
+  height: 24px;
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  color: transparent;
+  text-align: left;
+  display: inline-block;
+  min-width: 250px;
+  max-width: 100%;
+}
+.textFieldItem {
+  height: 6px;
+  width: 12px;
+  position: relative;
+  object-fit: contain;
+  display: none;
+}
+.textField1 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-2xl) var(--padding-xs)
+    var(--padding-lgi);
+  box-sizing: border-box;
+  gap: 0 10px;
+  max-width: 100%;
+}
+.votreTlphone {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-montserrat);
+  font-size: var(--subtitles-subtitle-2-size);
+  background-color: transparent;
+  height: 24px;
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  color: transparent;
+  text-align: left;
+  display: inline-block;
+  min-width: 250px;
+  max-width: 100%;
+}
+.textFieldInner {
+  height: 6px;
+  width: 12px;
+  position: relative;
+  object-fit: contain;
+  display: none;
+}
+.textField2 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-2xl) var(--padding-xs)
+    var(--padding-lgi);
+  box-sizing: border-box;
+  gap: 0 10px;
+  max-width: 100%;
+}
+.votreMessage {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-montserrat);
+  font-size: var(--subtitles-subtitle-2-size);
+  background-color: transparent;
+  height: 24px;
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  color: #828282;
+  text-align: left;
+  display: inline-block;
+  min-width: 250px;
+  max-width: 100%;
+  z-index: unset;
+}
+.vectorIcon {
+  height: 6px;
+  width: 12px;
+  position: relative;
+  object-fit: contain;
+  display: none;
+}
+.textField3 {
+  align-self: stretch;
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-2xl) var(--padding-xs)
+    var(--padding-lgi);
+  gap: 0 10px;
+  max-width: 100%;
+  z-index: unset;
+}
+.envoyerUnMessage {
+  position: relative;
+  font-size: var(--font-size-base);
+  text-transform: uppercase;
+  font-family: var(--font-montserrat);
+  color: var(--white);
+  text-align: left;
+  z-index: unset;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-5xl);
+  background-color: var(--color-gold-100);
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: unset;
+}
+.button:hover {
+  background-color: var(--color-goldenrod);
+}
+.frameB,
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  z-index: unset;
+}
+.inputGroup {
+  margin: 0;
+  width: 545px;
+  height: 330px;
+  gap: 20px 0;
+}
+.frameB {
+  gap: 40px 0;
+}
+.telephoneLabelIcon {
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.parTelephone {
+  margin: 0;
+  font-weight: 600;
+}
+.p {
+  margin: 0;
+  color: var(--color-gray-300);
+}
+.parTelephone06Container {
+  height: 40px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  display: inline-block;
+}
+.contactVia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 15px;
+}
+.emailIcon {
+  height: 28px;
+  width: 28px;
+  position: relative;
+  z-index: unset;
+}
+.parEmail {
+  margin: 0;
+}
+.electrick68gmailcom {
+  margin: 0;
+  color: var(--color-black);
+}
+.parEmailElectrick68gmailcoContainer {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  font-weight: 600;
+}
+.emailLabel,
+.phoneField {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.emailLabel {
+  display: flex;
+  align-items: center;
+  gap: 0 14px;
+  z-index: unset;
+}
+.phoneField {
+  flex-wrap: wrap;
+  padding: 0 var(--padding-6xs) 0 0;
+  box-sizing: border-box;
+  gap: 50px 41.11px;
+  max-width: 100%;
+  font-size: var(--font-size-smi);
+  color: var(--color-gold-100);
+}
+.contactUs,
+.frameA,
+.phoneField {
+  display: flex;
+  align-items: flex-start;
+}
+.frameA {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 60px 0;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-35xl);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+}
+.contactUs {
+  width: 100%;
+  position: relative;
+  border-radius: 50px;
+  background-color: var(--white);
+  box-shadow: 0 141px 200px -80px rgba(25, 58, 75, 0.3);
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 148px 77px 172px;
+  box-sizing: border-box;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1000px) {
+  .contactUs {
+    padding-left: var(--padding-19xl);
+    padding-right: var(--padding-19xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 975px) {
+  .vousDsirezNous {
+    font-size: var(--font-size-24xl);
+  }
+  .frameA {
+    gap: 60px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .vousDsirezNous {
+    font-size: var(--font-size-13xl);
+  }
+  .frameB {
+    gap: 40px 0;
+  }
+  .phoneField {
+    gap: 50px 41.11px;
+  }
+}

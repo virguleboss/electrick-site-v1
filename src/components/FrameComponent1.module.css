@@ -1,0 +1,44 @@
+.expertiseTechniqueIcon {
+  width: 109.1px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.expertiseTechnique {
+  position: relative;
+  font-weight: 600;
+}
+.matriseDesDernires {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-lato);
+  text-align: center;
+}
+.expertiseTechniqueTexte,
+.technologyMastery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.expertiseTechniqueTexte {
+  align-self: stretch;
+  gap: 10px 0;
+}
+.technologyMastery {
+  flex: 1;
+  gap: 24px 0;
+  min-width: 134px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--white);
+  font-family: var(--font-source-serif-pro);
+}
+@media screen and (max-width: 450px) {
+  .expertiseTechnique {
+    font-size: var(--font-size-lgi);
+  }
+}

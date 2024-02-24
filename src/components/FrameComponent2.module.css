@@ -1,0 +1,114 @@
+.groupIcon {
+  height: 51px;
+  width: 55px;
+  position: relative;
+  object-fit: cover;
+}
+.electrick {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.logoTitre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xl) 0 0;
+  gap: 0 11px;
+}
+.aPropos,
+.nou {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  text-transform: capitalize;
+  flex-shrink: 0;
+}
+.nou {
+  cursor: pointer;
+}
+.aPropos {
+  white-space: nowrap;
+}
+.menuBar,
+.menuBarFrame {
+  display: flex;
+  align-items: flex-start;
+}
+.menuBar {
+  width: 189px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+}
+.menuBarFrame {
+  height: 25px;
+  width: 347px;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+  font-size: var(--font-size-lg);
+}
+.rectangles,
+.rectangles1,
+.rectangles2 {
+  width: 40px;
+  height: 2px;
+  position: relative;
+  background-color: var(--white);
+}
+.menuToggle,
+.toggleRectangle {
+  display: flex;
+  flex-direction: column;
+}
+.menuToggle {
+  height: 40px;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-gray-600);
+  align-items: center;
+  justify-content: center;
+  gap: 8px 0;
+  cursor: pointer;
+}
+.toggleRectangle {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-10xs);
+}
+.proposalFrame,
+.webpassionCreatorFrame {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.proposalFrame {
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--headers-h6-size);
+  color: var(--color-gainsboro);
+  font-family: var(--font-quicksand);
+}
+.webpassionCreatorFrame {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-16xl) 0 0;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 750px) {
+  .menuBar {
+    display: none;
+  }
+  .menuBarFrame {
+    width: 158px;
+  }
+}

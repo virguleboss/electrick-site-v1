@@ -1,0 +1,65 @@
+.ceQueJe {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.scratchIcon {
+  width: 283.6px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px 0;
+  max-width: 100%;
+}
+.heroPropose,
+.lesTechnologies {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.lesTechnologies {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xs) 0 0;
+  gap: 50px 46px;
+  font-size: var(--font-size-5xl);
+}
+.heroPropose {
+  width: 1142px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  gap: 20px 0;
+  text-align: left;
+  font-size: var(--font-size-26xl);
+  color: var(--white);
+  font-family: var(--font-source-serif-pro);
+}
+@media screen and (max-width: 1050px) {
+  .ceQueJe {
+    font-size: var(--font-size-17xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .lesTechnologies {
+    gap: 50px 46px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ceQueJe {
+    font-size: var(--font-size-8xl);
+  }
+}

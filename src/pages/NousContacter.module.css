@@ -1,0 +1,135 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.groupIcon {
+  height: 51px;
+  width: 55px;
+  position: relative;
+  object-fit: cover;
+}
+.electrick {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  white-space: nowrap;
+}
+.logoTitre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xl) 0 0;
+  gap: 0 11px;
+}
+.aPropos,
+.nou {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  text-transform: capitalize;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.aPropos {
+  white-space: nowrap;
+}
+.groupFrame,
+.menuBar {
+  display: flex;
+  align-items: flex-start;
+}
+.menuBar {
+  width: 189px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+}
+.groupFrame {
+  height: 25px;
+  width: 347px;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+  font-size: var(--font-size-lg);
+}
+.contactFields,
+.contactFields1,
+.contactFields2 {
+  width: 40px;
+  height: 2px;
+  position: relative;
+  background-color: var(--white);
+}
+.menuToggle,
+.menutoggleInstance {
+  display: flex;
+  flex-direction: column;
+}
+.menuToggle {
+  height: 40px;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-gray-600);
+  align-items: center;
+  justify-content: center;
+  gap: 8px 0;
+}
+.menutoggleInstance {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-10xs);
+  cursor: pointer;
+}
+.nousContactFrame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--headers-h6-size);
+  color: var(--color-gainsboro);
+  font-family: var(--font-quicksand);
+}
+.nousContacter {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 117px 0;
+  opacity: 0;
+  letter-spacing: normal;
+}
+.nousContacter.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}
+@media screen and (max-width: 750px) {
+  .menuBar {
+    display: none;
+  }
+  .groupFrame {
+    width: 158px;
+  }
+  .nousContacter {
+    gap: 117px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nousContacter {
+    gap: 117px 0;
+  }
+}

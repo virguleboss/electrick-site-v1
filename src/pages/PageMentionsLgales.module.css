@@ -1,0 +1,193 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.groupIcon {
+  height: 51px;
+  width: 55px;
+  position: relative;
+  object-fit: cover;
+}
+.electrick {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  white-space: nowrap;
+}
+.groupParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xl) 0 0;
+  gap: 0 11px;
+}
+.aPropos,
+.nou {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  text-transform: capitalize;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.aPropos {
+  white-space: nowrap;
+}
+.electrick1,
+.menuBar {
+  display: flex;
+  align-items: flex-start;
+}
+.menuBar {
+  width: 189px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+}
+.electrick1 {
+  height: 25px;
+  width: 347px;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+  font-size: var(--font-size-lg);
+}
+.menuToggleChild,
+.menuToggleInner,
+.menuToggleItem {
+  width: 40px;
+  height: 2px;
+  position: relative;
+  background-color: var(--white);
+}
+.menuToggle,
+.menutoggle {
+  display: flex;
+  flex-direction: column;
+}
+.menuToggle {
+  height: 40px;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-gray-600);
+  align-items: center;
+  justify-content: center;
+  gap: 8px 0;
+  cursor: pointer;
+}
+.menutoggle {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-10xs);
+}
+.fRAME,
+.pageMentions {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.fRAME {
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: var(--gap-xl);
+}
+.pageMentions {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-sm) 0;
+  text-align: left;
+  font-size: var(--headers-h6-size);
+  color: var(--color-gainsboro);
+  font-family: var(--font-quicksand);
+}
+.mentionsLgales {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  font-weight: 600;
+}
+.contact,
+.directeurDeLa,
+.electrick68gmailcom06,
+.fr63889089504,
+.gomesDeMiranda,
+.gomesDeMiranda1,
+.hbergeurDuSite,
+.mulhouseA889,
+.nomEtCoordonnes,
+.numroSiret,
+.p,
+.rcs,
+.rueDeHirschau,
+.sigeSocial,
+.tvaIntracommunautaire {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+.cettePageConstitue {
+  margin: 0;
+}
+.gomesDeMirandaContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  font-weight: 600;
+}
+.mentionsLgalesParent,
+.pageMentionsLgales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mentionsLgalesParent {
+  width: 1093px;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  gap: 18px 0;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--white);
+  font-family: var(--font-lato);
+}
+.pageMentionsLgales {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  gap: 130px 0;
+  opacity: 0;
+  letter-spacing: normal;
+}
+.pageMentionsLgales.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}
+@media screen and (max-width: 750px) {
+  .menuBar {
+    display: none;
+  }
+  .electrick1 {
+    width: 158px;
+  }
+  .pageMentionsLgales {
+    gap: 130px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .pageMentionsLgales {
+    gap: 130px 0;
+  }
+}

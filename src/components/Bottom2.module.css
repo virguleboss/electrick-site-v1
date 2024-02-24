@@ -1,0 +1,202 @@
+.logoBottomIcon {
+  height: 66.6px;
+  width: 187px;
+  position: relative;
+  border-radius: var(--br-xl);
+  object-fit: contain;
+}
+.informationsLgales {
+  width: 328px;
+  position: relative;
+  text-decoration: underline;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 139%;
+}
+.infoLgales {
+  width: 236px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.conditionsGnralesDutilisa {
+  position: relative;
+  font-size: var(--font-size-lg);
+  color: var(--color-gainsboro);
+  cursor: pointer;
+}
+.subInfoFrame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 28px 0;
+}
+.politiqueDeConfidentialit {
+  position: relative;
+  font-size: var(--font-size-lg);
+  color: var(--color-gainsboro-100);
+}
+.infoFrame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 45px 0;
+}
+.mentionsLgales {
+  position: relative;
+  cursor: pointer;
+}
+.footerFrame,
+.mentionsLegalesText,
+.rectangleFrame {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footerFrame {
+  flex-direction: row;
+  padding: 0 var(--padding-11xs);
+  font-size: var(--font-size-lg);
+  color: var(--color-gainsboro-100);
+}
+.mentionsLegalesText,
+.rectangleFrame {
+  flex: 1;
+  flex-direction: column;
+  gap: 32px 0;
+  min-width: 211px;
+  max-width: 100%;
+}
+.mentionsLegalesText {
+  flex-direction: row;
+  gap: 0 75px;
+  min-width: 586px;
+}
+.pages {
+  width: 328px;
+  position: relative;
+  text-decoration: underline;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 139%;
+}
+.infoLgales1 {
+  align-self: stretch;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.accueil {
+  position: relative;
+  font-size: var(--font-size-lg);
+  color: var(--color-gainsboro);
+  cursor: pointer;
+}
+.aboutTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 28px 0;
+}
+.aPropos,
+.nousContacter {
+  position: relative;
+  cursor: pointer;
+}
+.aPrintableFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-11xs);
+}
+.aboutUsText {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px 0;
+  font-size: var(--font-size-lg);
+  color: var(--color-gainsboro-100);
+}
+.aboutUsText,
+.bottom,
+.homeInfoFrame {
+  display: flex;
+  justify-content: flex-start;
+}
+.homeInfoFrame {
+  width: 236px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 45px 0;
+  min-width: 236px;
+}
+.bottom {
+  align-self: stretch;
+  flex: 1;
+  border: 1px solid var(--color-gold-200);
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: var(--padding-37xl) var(--padding-15xl);
+  gap: 10px 257px;
+  min-height: 354px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-gold-200);
+  font-family: var(--font-quicksand);
+}
+@media screen and (max-width: 1200px) {
+  .homeInfoFrame,
+  .mentionsLegalesText {
+    flex: 1;
+  }
+  .bottom {
+    flex-wrap: wrap;
+    gap: 10px 257px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .mentionsLegalesText {
+    flex-wrap: wrap;
+    gap: 0 75px;
+    min-width: 100%;
+  }
+  .bottom {
+    gap: 10px 257px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .informationsLgales {
+    font-size: var(--font-size-lg);
+  }
+  .infoFrame {
+    gap: 45px 0;
+  }
+  .rectangleFrame {
+    gap: 32px 0;
+  }
+  .mentionsLegalesText {
+    gap: 0 75px;
+  }
+  .pages {
+    font-size: var(--font-size-lg);
+  }
+  .bottom {
+    gap: 10px 257px;
+  }
+}

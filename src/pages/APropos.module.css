@@ -1,0 +1,170 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.home {
+  font-weight: 500;
+}
+.aboutUs,
+.contact,
+.home {
+  position: relative;
+}
+.contact {
+  font-weight: 500;
+}
+.frameHomeContact {
+  width: 344px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 22px 0 var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--heading-headline-1);
+}
+.nous {
+  color: var(--color-gold-200);
+}
+.aProposDeContainer {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.electrick {
+  color: var(--color-gold-200);
+}
+.jeSuisElectrickContainer {
+  width: 663px;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 600;
+  font-family: var(--font-lato);
+  text-align: center;
+  display: inline-block;
+  max-width: 100%;
+}
+.homeFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.contactezMoi {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.vousAvezUn {
+  width: 663px;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 600;
+  font-family: var(--font-lato);
+  text-align: center;
+  display: inline-block;
+  max-width: 100%;
+}
+.subFrameA {
+  width: 802px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.cta {
+  position: relative;
+  font-size: var(--font-size-9xl);
+  line-height: 150%;
+  font-family: var(--font-dm-sans);
+  color: var(--color-gray-100);
+  text-align: center;
+}
+.aPropos,
+.button {
+  display: flex;
+  align-items: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 28px 26px 27px;
+  background-color: var(--white);
+  width: 312px;
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.button:hover {
+  background-color: #e6e6e6;
+}
+.aPropos {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-61xl);
+  opacity: 0;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-77xl);
+  color: var(--white);
+  font-family: var(--font-source-serif-pro);
+}
+.aPropos.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}
+@media screen and (max-width: 1050px) {
+  .aProposDeContainer,
+  .contactezMoi {
+    font-size: var(--font-size-29xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .aPropos {
+    gap: var(--gap-61xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .aProposDeContainer {
+    font-size: var(--font-size-10xl);
+  }
+  .jeSuisElectrickContainer {
+    font-size: var(--font-size-lgi);
+  }
+  .contactezMoi {
+    font-size: var(--font-size-10xl);
+  }
+  .vousAvezUn {
+    font-size: var(--font-size-lgi);
+  }
+  .button {
+    width: calc(100% - 40px);
+  }
+  .aPropos {
+    gap: var(--gap-61xl);
+  }
+}

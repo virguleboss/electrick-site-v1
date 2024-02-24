@@ -1,0 +1,216 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.groupIcon {
+  height: 51px;
+  width: 55px;
+  position: relative;
+  object-fit: cover;
+}
+.electrick {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+}
+.electrickText,
+.groupParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-10xs);
+}
+.groupParent {
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--padding-5xl) 0 0;
+  gap: 0 11px;
+}
+.aPropos,
+.nou {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  text-transform: capitalize;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.aPropos {
+  white-space: nowrap;
+}
+.menuBar {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0;
+  gap: var(--gap-xl);
+}
+.politiqueDeConfidentialit {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.aProposText,
+.collecteInformationsFrame,
+.nouFrame {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.collecteInformationsFrame {
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-sm);
+  color: var(--white);
+  font-family: var(--font-lato);
+}
+.aProposText,
+.nouFrame {
+  flex-direction: column;
+}
+.aProposText {
+  gap: 158px 0;
+}
+.nouFrame {
+  width: 347px;
+  padding: var(--padding-smi) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--font-size-lg);
+}
+.rectangleRectangleRectangle,
+.rectangleRectangleRectangle1,
+.rectangleRectangleRectangle2 {
+  width: 40px;
+  height: 2px;
+  position: relative;
+  background-color: var(--white);
+}
+.menuToggle {
+  height: 40px;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-gray-600);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 0;
+  cursor: pointer;
+}
+.frameParent,
+.menutoggleInstance {
+  display: flex;
+  align-items: flex-start;
+}
+.menutoggleInstance {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--headers-h6-size);
+  color: var(--color-gainsboro);
+  font-family: var(--font-quicksand);
+}
+.collecteDinformations,
+.cookies,
+.lesInformationsQue,
+.nousMettonsEn,
+.nousRecueillonsDes,
+.scuritDesInformations,
+.utilisationDesInformations {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+.nousUtilisonsDes {
+  margin: 0;
+}
+.collecteDinformationsNousContainer {
+  width: 1053px;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.collecteDinformationsNousRWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 62px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.pageFrame,
+.pagePolitiqueDeConfidential {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.pageFrame {
+  align-self: stretch;
+  align-items: flex-end;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  gap: 18px 0;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--white);
+  font-family: var(--font-lato);
+}
+.pagePolitiqueDeConfidential {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  align-items: flex-start;
+  gap: 212px 0;
+  opacity: 0;
+  letter-spacing: normal;
+}
+.pagePolitiqueDeConfidential.animate {
+  animation: 1s ease 0s 1 normal forwards fade-in;
+}
+@media screen and (max-width: 1200px) {
+  .collecteDinformationsNousRWrapper {
+    padding-left: var(--padding-12xl);
+    padding-right: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .menuBar,
+  .politiqueDeConfidentialit {
+    display: none;
+  }
+  .pagePolitiqueDeConfidential {
+    gap: 212px 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .pagePolitiqueDeConfidential {
+    gap: 212px 0;
+  }
+}
